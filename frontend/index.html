@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management System</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Management System</h1>
+    <p class="description">Add, edit, and manage your users with ease</p>
+
+    <div class="form-group">
+      <input type="text" id="name" placeholder="Enter name" required>
+      <input type="email" id="email" placeholder="Enter email" required>
+      <textarea id="content" placeholder="Enter content (100 words)" rows="3" style="flex:2; min-width:300px; padding:10px; border:1px solid var(--border-color); border-radius:4px; font-size:1rem;"></textarea>
+      <button class="btn-primary" onclick="createUser()">Add User</button>
+    </div>
+    <div id="message"></div>
+
+    <div id="userList"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
